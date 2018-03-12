@@ -27,7 +27,7 @@ F 3 "" H 1150 1500 50  0000 C CNN
 	1    950  1500
 	1    0    0    -1  
 $EndComp
-Text GLabel 1050 3100 0    60   Input ~ 0
+Text GLabel 2100 3100 0    60   Input ~ 0
 data2
 Text GLabel 950  1500 0    60   Input ~ 0
 data2
@@ -37,7 +37,7 @@ U 1 1 57D527EC
 P 1350 1750
 F 0 "R1" V 1430 1750 50  0000 C CNN
 F 1 "4.7k" V 1350 1750 50  0000 C CNN
-F 2 "Keebio-Parts:Resistor-Hybrid" V 1280 1750 50  0001 C CNN
+F 2 "Keebio-Parts:Resistor-Hybrid-Back" V 1280 1750 50  0001 C CNN
 F 3 "" H 1350 1750 50  0000 C CNN
 	1    1350 1750
 	1    0    0    -1  
@@ -104,39 +104,28 @@ F 3 "" H 1950 1400 50  0000 C CNN
 	1    1950 1400
 	0    1    1    0   
 $EndComp
-$Comp
-L fourier-left-rescue:TRRS-RESCUE-fourier-left T1
-U 1 1 597A8C3A
-P 1400 3300
-F 0 "T1" H 1400 3900 60  0000 C CNN
-F 1 "TRRS" H 1400 3200 60  0000 C CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 1550 3300 60  0001 C CNN
-F 3 "" H 1550 3300 60  0001 C CNN
-	1    1400 3300
-	1    0    0    -1  
-$EndComp
-Text GLabel 1050 3000 0    60   Input ~ 0
+Text GLabel 2100 3000 0    60   Input ~ 0
 data
 $Comp
 L power:GND #PWR05
 U 1 1 597AA15C
-P 1050 2900
-F 0 "#PWR05" H 1050 2650 50  0001 C CNN
-F 1 "GND" H 1050 2750 50  0000 C CNN
-F 2 "" H 1050 2900 50  0000 C CNN
-F 3 "" H 1050 2900 50  0000 C CNN
-	1    1050 2900
+P 2100 3200
+F 0 "#PWR05" H 2100 2950 50  0001 C CNN
+F 1 "GND" H 2100 3050 50  0000 C CNN
+F 2 "" H 2100 3200 50  0000 C CNN
+F 3 "" H 2100 3200 50  0000 C CNN
+	1    2100 3200
 	0    1    1    0   
 $EndComp
 $Comp
 L power:VCC #PWR06
 U 1 1 597AA90C
-P 1050 3200
-F 0 "#PWR06" H 1050 3050 50  0001 C CNN
-F 1 "VCC" H 1050 3350 50  0000 C CNN
-F 2 "" H 1050 3200 50  0000 C CNN
-F 3 "" H 1050 3200 50  0000 C CNN
-	1    1050 3200
+P 2100 2900
+F 0 "#PWR06" H 2100 2750 50  0001 C CNN
+F 1 "VCC" H 2100 3050 50  0000 C CNN
+F 2 "" H 2100 2900 50  0000 C CNN
+F 3 "" H 2100 2900 50  0000 C CNN
+	1    2100 2900
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -156,7 +145,7 @@ U 1 1 597AC13C
 P 1350 1350
 F 0 "R2" V 1430 1350 50  0000 C CNN
 F 1 "4.7k" V 1350 1350 50  0000 C CNN
-F 2 "Keebio-Parts:Resistor-Hybrid" V 1280 1350 50  0001 C CNN
+F 2 "Keebio-Parts:Resistor-Hybrid-Back" V 1280 1350 50  0001 C CNN
 F 3 "" H 1350 1350 50  0000 C CNN
 	1    1350 1350
 	1    0    0    -1  
@@ -203,7 +192,7 @@ L fourier-left-rescue:TEST_1P-RESCUE-fourier-left J3
 U 1 1 597B3DA6
 P 1550 4150
 F 0 "J3" H 1550 4420 50  0000 C CNN
-F 1 "RGB1" H 1550 4350 50  0000 C CNN
+F 1 "RGB" H 1550 4350 50  0000 C CNN
 F 2 "Keebio-Parts:Single-Pad" H 1750 4150 50  0001 C CNN
 F 3 "" H 1750 4150 50  0001 C CNN
 	1    1550 4150
@@ -302,7 +291,7 @@ U 1 1 5A70C1CF
 P 4500 2950
 F 0 "D_A1" H 4500 3050 50  0000 C CNN
 F 1 "D" H 4500 2850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 4500 2950 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 4500 2950 50  0001 C CNN
 F 3 "" H 4500 2950 50  0001 C CNN
 	1    4500 2950
 	0    -1   -1   0   
@@ -324,7 +313,7 @@ U 1 1 5A70C2B2
 P 5300 2950
 F 0 "D_A2" H 5300 3050 50  0000 C CNN
 F 1 "D" H 5300 2850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 5300 2950 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 5300 2950 50  0001 C CNN
 F 3 "" H 5300 2950 50  0001 C CNN
 	1    5300 2950
 	0    -1   -1   0   
@@ -346,7 +335,7 @@ U 1 1 5A70C34E
 P 6100 2950
 F 0 "D_A3" H 6100 3050 50  0000 C CNN
 F 1 "D" H 6100 2850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6100 2950 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6100 2950 50  0001 C CNN
 F 3 "" H 6100 2950 50  0001 C CNN
 	1    6100 2950
 	0    -1   -1   0   
@@ -368,7 +357,7 @@ U 1 1 5A70C35A
 P 6900 2950
 F 0 "D_A4" H 6900 3050 50  0000 C CNN
 F 1 "D" H 6900 2850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6900 2950 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6900 2950 50  0001 C CNN
 F 3 "" H 6900 2950 50  0001 C CNN
 	1    6900 2950
 	0    -1   -1   0   
@@ -390,7 +379,7 @@ U 1 1 5A70C458
 P 7700 2950
 F 0 "D_A5" H 7700 3050 50  0000 C CNN
 F 1 "D" H 7700 2850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 7700 2950 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 7700 2950 50  0001 C CNN
 F 3 "" H 7700 2950 50  0001 C CNN
 	1    7700 2950
 	0    -1   -1   0   
@@ -412,7 +401,7 @@ U 1 1 5A70C464
 P 8500 2950
 F 0 "D_A6" H 8500 3050 50  0000 C CNN
 F 1 "D" H 8500 2850 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 8500 2950 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 8500 2950 50  0001 C CNN
 F 3 "" H 8500 2950 50  0001 C CNN
 	1    8500 2950
 	0    -1   -1   0   
@@ -434,7 +423,7 @@ U 1 1 5A70C5DF
 P 4500 3550
 F 0 "D_B1" H 4500 3650 50  0000 C CNN
 F 1 "D" H 4500 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 4500 3550 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 4500 3550 50  0001 C CNN
 F 3 "" H 4500 3550 50  0001 C CNN
 	1    4500 3550
 	0    -1   -1   0   
@@ -456,7 +445,7 @@ U 1 1 5A70CA8F
 P 5300 3550
 F 0 "D_B2" H 5300 3650 50  0000 C CNN
 F 1 "D" H 5300 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 5300 3550 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 5300 3550 50  0001 C CNN
 F 3 "" H 5300 3550 50  0001 C CNN
 	1    5300 3550
 	0    -1   -1   0   
@@ -478,7 +467,7 @@ U 1 1 5A70CAF5
 P 6100 3550
 F 0 "D_B3" H 6100 3650 50  0000 C CNN
 F 1 "D" H 6100 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6100 3550 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6100 3550 50  0001 C CNN
 F 3 "" H 6100 3550 50  0001 C CNN
 	1    6100 3550
 	0    -1   -1   0   
@@ -500,7 +489,7 @@ U 1 1 5A70CBFF
 P 6900 3550
 F 0 "D_B4" H 6900 3650 50  0000 C CNN
 F 1 "D" H 6900 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6900 3550 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6900 3550 50  0001 C CNN
 F 3 "" H 6900 3550 50  0001 C CNN
 	1    6900 3550
 	0    -1   -1   0   
@@ -522,7 +511,7 @@ U 1 1 5A70CC0B
 P 7700 3550
 F 0 "D_B5" H 7700 3650 50  0000 C CNN
 F 1 "D" H 7700 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 7700 3550 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 7700 3550 50  0001 C CNN
 F 3 "" H 7700 3550 50  0001 C CNN
 	1    7700 3550
 	0    -1   -1   0   
@@ -544,7 +533,7 @@ U 1 1 5A70CC17
 P 8500 3550
 F 0 "D_B6" H 8500 3650 50  0000 C CNN
 F 1 "D" H 8500 3450 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 8500 3550 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 8500 3550 50  0001 C CNN
 F 3 "" H 8500 3550 50  0001 C CNN
 	1    8500 3550
 	0    -1   -1   0   
@@ -566,7 +555,7 @@ U 1 1 5A70CD16
 P 4500 4150
 F 0 "D_C1" H 4500 4250 50  0000 C CNN
 F 1 "D" H 4500 4050 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 4500 4150 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 4500 4150 50  0001 C CNN
 F 3 "" H 4500 4150 50  0001 C CNN
 	1    4500 4150
 	0    -1   -1   0   
@@ -588,7 +577,7 @@ U 1 1 5A70CE74
 P 5300 4150
 F 0 "D_C2" H 5300 4250 50  0000 C CNN
 F 1 "D" H 5300 4050 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 5300 4150 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 5300 4150 50  0001 C CNN
 F 3 "" H 5300 4150 50  0001 C CNN
 	1    5300 4150
 	0    -1   -1   0   
@@ -610,7 +599,7 @@ U 1 1 5A70CF24
 P 6100 4150
 F 0 "D_C3" H 6100 4250 50  0000 C CNN
 F 1 "D" H 6100 4050 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6100 4150 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6100 4150 50  0001 C CNN
 F 3 "" H 6100 4150 50  0001 C CNN
 	1    6100 4150
 	0    -1   -1   0   
@@ -632,7 +621,7 @@ U 1 1 5A70CF30
 P 6900 4150
 F 0 "D_C4" H 6900 4250 50  0000 C CNN
 F 1 "D" H 6900 4050 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6900 4150 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6900 4150 50  0001 C CNN
 F 3 "" H 6900 4150 50  0001 C CNN
 	1    6900 4150
 	0    -1   -1   0   
@@ -654,7 +643,7 @@ U 1 1 5A70CFE8
 P 7700 4150
 F 0 "D_C5" H 7700 4250 50  0000 C CNN
 F 1 "D" H 7700 4050 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 7700 4150 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 7700 4150 50  0001 C CNN
 F 3 "" H 7700 4150 50  0001 C CNN
 	1    7700 4150
 	0    -1   -1   0   
@@ -676,7 +665,7 @@ U 1 1 5A70CFF4
 P 8500 4150
 F 0 "D_C6" H 8500 4250 50  0000 C CNN
 F 1 "D" H 8500 4050 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 8500 4150 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 8500 4150 50  0001 C CNN
 F 3 "" H 8500 4150 50  0001 C CNN
 	1    8500 4150
 	0    -1   -1   0   
@@ -698,7 +687,7 @@ U 1 1 5A70D105
 P 4500 5600
 F 0 "D_D1" H 4500 5700 50  0000 C CNN
 F 1 "D" H 4500 5500 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 4500 5600 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 4500 5600 50  0001 C CNN
 F 3 "" H 4500 5600 50  0001 C CNN
 	1    4500 5600
 	0    -1   -1   0   
@@ -720,7 +709,7 @@ U 1 1 5A70D2D1
 P 5300 5600
 F 0 "D_D2" H 5300 5700 50  0000 C CNN
 F 1 "D" H 5300 5500 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 5300 5600 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 5300 5600 50  0001 C CNN
 F 3 "" H 5300 5600 50  0001 C CNN
 	1    5300 5600
 	0    -1   -1   0   
@@ -742,7 +731,7 @@ U 1 1 5A70D395
 P 6100 5600
 F 0 "D_D3" H 6100 5700 50  0000 C CNN
 F 1 "D" H 6100 5500 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 6100 5600 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6100 5600 50  0001 C CNN
 F 3 "" H 6100 5600 50  0001 C CNN
 	1    6100 5600
 	0    -1   -1   0   
@@ -753,7 +742,7 @@ U 1 1 5A70D39B
 P 7400 4600
 F 0 "SW_D5" H 7550 4710 50  0000 C CNN
 F 1 "SW_PUSH" H 7400 4520 50  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-2.75U-NoLED" H 7400 4600 50  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.75U-ReversedStabilizer-NoLED" H 7400 4600 50  0001 C CNN
 F 3 "" H 7400 4600 50  0000 C CNN
 	1    7400 4600
 	-1   0    0    1   
@@ -764,7 +753,7 @@ U 1 1 5A70D3A1
 P 7700 5600
 F 0 "D_D5" H 7700 5700 50  0000 C CNN
 F 1 "D" H 7700 5500 50  0000 C CNN
-F 2 "Keebio-Parts:Diode-dual" H 7700 5600 50  0001 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 7700 5600 50  0001 C CNN
 F 3 "" H 7700 5600 50  0001 C CNN
 	1    7700 5600
 	0    -1   -1   0   
@@ -808,7 +797,7 @@ U 1 1 5A70DC4B
 P 7400 4900
 F 0 "SW_Db5" H 7550 5010 50  0000 C CNN
 F 1 "SW_PUSH" H 7400 4820 50  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-2.25U-NoLED" H 7400 4900 50  0001 C CNN
+F 2 "MX_Alps_Hybrid:MX-2.25U-ReversedStabilizer-NoLED" H 7400 4900 50  0001 C CNN
 F 3 "" H 7400 4900 50  0000 C CNN
 	1    7400 4900
 	1    0    0    -1  
@@ -919,9 +908,7 @@ Wire Wire Line
 Wire Wire Line
 	1350 1500 1950 1500
 Wire Wire Line
-	5300 5750 6100 5750
-Wire Wire Line
-	6100 5750 7700 5750
+	6100 5750 6900 5750
 Wire Wire Line
 	5300 4300 6100 4300
 Wire Wire Line
@@ -951,15 +938,11 @@ Wire Wire Line
 Wire Wire Line
 	3900 4000 3900 4600
 Wire Wire Line
-	3900 3400 3900 4000
+	3900 3400 3900 3850
 Wire Wire Line
 	4700 4600 4700 4900
 Wire Wire Line
 	4700 4000 4700 4600
-Wire Wire Line
-	4500 4900 4500 5450
-Wire Wire Line
-	5300 4900 5300 5450
 Wire Wire Line
 	5500 4900 5500 5200
 Wire Wire Line
@@ -987,10 +970,10 @@ Wire Wire Line
 Wire Wire Line
 	6300 3400 6300 4000
 $Comp
-L power:VCC #PWR?
+L power:VCC #PWR0101
 U 1 1 5A96DE94
 P 1600 1000
-F 0 "#PWR?" H 1600 850 50  0001 C CNN
+F 0 "#PWR0101" H 1600 850 50  0001 C CNN
 F 1 "VCC" H 1600 1150 50  0000 C CNN
 F 2 "" H 1600 1000 50  0000 C CNN
 F 3 "" H 1600 1000 50  0000 C CNN
@@ -1001,4 +984,119 @@ Wire Wire Line
 	1950 1200 1600 1200
 Wire Wire Line
 	1600 1200 1600 1000
+Text GLabel 3350 2200 2    60   Input ~ 0
+col7
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_Cb1
+U 1 1 5A971711
+P 4200 3850
+F 0 "SW_Cb1" H 4350 3960 50  0000 C CNN
+F 1 "SW_PUSH" H 4200 3770 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 4200 3850 50  0001 C CNN
+F 3 "" H 4200 3850 50  0000 C CNN
+	1    4200 3850
+	-1   0    0    1   
+$EndComp
+Connection ~ 3900 3850
+Wire Wire Line
+	3900 3850 3900 4000
+Wire Wire Line
+	4500 4000 4500 3850
+Connection ~ 4500 4000
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_Dc1
+U 1 1 5A9D9B67
+P 4200 5200
+F 0 "SW_Dc1" H 4350 5310 50  0000 C CNN
+F 1 "SW_PUSH" H 4200 5120 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 4200 5200 50  0001 C CNN
+F 3 "" H 4200 5200 50  0000 C CNN
+	1    4200 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3900 5200 3900 4900
+Connection ~ 3900 4900
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_Dc2
+U 1 1 5A9DAC46
+P 5000 5200
+F 0 "SW_Dc2" H 5150 5310 50  0000 C CNN
+F 1 "SW_PUSH" H 5000 5120 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5000 5200 50  0001 C CNN
+F 3 "" H 5000 5200 50  0000 C CNN
+	1    5000 5200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4700 5200 4700 4900
+Connection ~ 4700 4900
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_Dd3
+U 1 1 5A9DBDC1
+P 5800 5450
+F 0 "SW_Dd3" H 5950 5560 50  0000 C CNN
+F 1 "SW_PUSH" H 5800 5370 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5800 5450 50  0001 C CNN
+F 3 "" H 5800 5450 50  0000 C CNN
+	1    5800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_D4
+U 1 1 5A9DC151
+P 6600 4600
+F 0 "SW_D4" H 6750 4710 50  0000 C CNN
+F 1 "SW_PUSH" H 6600 4520 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 6600 4600 50  0001 C CNN
+F 3 "" H 6600 4600 50  0000 C CNN
+	1    6600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D D_D4
+U 1 1 5A9DC336
+P 6900 5600
+F 0 "D_D4" H 6900 5700 50  0000 C CNN
+F 1 "D" H 6900 5500 50  0000 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 6900 5600 50  0001 C CNN
+F 3 "" H 6900 5600 50  0001 C CNN
+	1    6900 5600
+	0    -1   -1   0   
+$EndComp
+Connection ~ 6900 5750
+Wire Wire Line
+	6900 5750 7700 5750
+Wire Wire Line
+	6300 4600 6300 4000
+Connection ~ 6300 4000
+Wire Wire Line
+	6900 4600 6900 5450
+Wire Wire Line
+	5500 5450 5500 5200
+Connection ~ 5500 5200
+$Comp
+L keebio:TRRS U2
+U 1 1 5A9E01AE
+P 2450 3300
+F 0 "U2" H 2678 3603 60  0000 L CNN
+F 1 "TRRS" H 2678 3497 60  0000 L CNN
+F 2 "Keebio-Parts:TRRS-PJ-320A" H 2600 3300 60  0001 C CNN
+F 3 "" H 2600 3300 60  0001 C CNN
+	1    2450 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 4900 4500 5200
+Connection ~ 4500 5200
+Wire Wire Line
+	4500 5200 4500 5450
+Wire Wire Line
+	5300 4900 5300 5200
+Connection ~ 5300 5200
+Wire Wire Line
+	5300 5200 5300 5450
+Connection ~ 6100 5450
+Wire Wire Line
+	5300 5750 6100 5750
 $EndSCHEMATC

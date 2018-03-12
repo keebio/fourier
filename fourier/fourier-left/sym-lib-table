@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name fourier-left-rescue)(type Legacy)(uri ${KIPRJMOD}/fourier-left-rescue.lib)(options "")(descr ""))
   (lib (name promicro)(type Legacy)(uri /Users/danny/Documents/proj/custom-keyboard/kicad-libs/promicro.lib)(options "")(descr ""))
+  (lib (name keebio)(type Legacy)(uri /Users/danny/Documents/proj/keeb/kicad-libs/keebio-components/keebio.lib)(options "")(descr ""))
 )
