@@ -3,9 +3,9 @@
   (general
     (thickness 1.6)
     (drawings 32)
-    (tracks 452)
+    (tracks 458)
     (zones 0)
-    (modules 143)
+    (modules 142)
     (nets 46)
   )
 
@@ -573,18 +573,6 @@
       (net 1 GND) (zone_connect 2))
   )
 
-  (module Keebio-Parts:VIA-0.6mm (layer F.Cu) (tedit 5A71FE8F) (tstamp 5A723F36)
-    (at 154.775 67.6)
-    (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (fp_text value VIA-0.6mm (at 0 -1.4) (layer F.Fab) hide
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (pad 1 thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
-      (net 1 GND) (zone_connect 2))
-  )
-
   (module Keebio-Parts:VIA-0.6mm (layer F.Cu) (tedit 5A71FE8F) (tstamp 5A723F32)
     (at 145.25 43.85)
     (fp_text reference REF** (at 0 1.4) (layer F.SilkS) hide
@@ -1102,7 +1090,7 @@
   )
 
   (module Keebio-Parts:Single-Pad (layer F.Cu) (tedit 5A714C44) (tstamp 5A70F239)
-    (at 154.78138 65.48443 270)
+    (at 154.78138 75.009312 270)
     (path /59B06325)
     (fp_text reference J1 (at 0 -1.778 270) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1115,7 +1103,7 @@
   )
 
   (module Keebio-Parts:Single-Pad (layer F.Cu) (tedit 5A714C3D) (tstamp 5A70F23E)
-    (at 154.78138 76.795377 270)
+    (at 154.78112 79.176496 270)
     (path /597B3DA6)
     (fp_text reference J3 (at 0 -1.778 270) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.2)))
@@ -1141,7 +1129,7 @@
   )
 
   (module Keebio-Parts:Single-Pad (layer F.Cu) (tedit 5A714C4B) (tstamp 5A70F248)
-    (at 154.78138 80.962568 270)
+    (at 154.78112 83.34368 270)
     (path /59B073BE)
     (fp_text reference J7 (at 0 -1.778 270) (layer Dwgs.User) hide
       (effects (font (size 1 1) (thickness 0.2)))
@@ -4605,15 +4593,21 @@
   (segment (start 45.813277 38.840581) (end 144.660816 38.840581) (width 0.25) (layer B.Cu) (net 20))
   (segment (start 144.886407 38.61499) (end 145.175 38.61499) (width 0.25) (layer B.Cu) (net 20))
   (segment (start 45.243712 38.69528) (end 45.667976 38.69528) (width 0.25) (layer B.Cu) (net 20))
-  (segment (start 154.78138 76.795377) (end 154.78138 75.556102) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 153.2 63.9) (end 155.1 62) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 153.2 67.25) (end 153.2 63.9) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 154.78138 75.556102) (end 154.2 74.974722) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 154.2 74.974722) (end 154.2 68.25) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 154.2 68.25) (end 153.2 67.25) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 155.1 62) (end 155.1 48.911228) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 155.1 48.911228) (end 153.273242 47.08447) (width 0.25) (layer F.Cu) (net 21))
-  (segment (start 153.273242 47.08447) (end 153.273242 45.95817) (width 0.25) (layer F.Cu) (net 21))
+  (via (at 154.81 65.68) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 20))
+  (segment (start 154.78138 65.65138) (end 154.81 65.68) (width 0.25) (layer B.Cu) (net 20))
+  (segment (start 154.78138 65.48443) (end 154.78138 65.65138) (width 0.25) (layer B.Cu) (net 20))
+  (segment (start 154.81 74.980692) (end 154.78138 75.009312) (width 0.25) (layer F.Cu) (net 20))
+  (segment (start 154.81 65.68) (end 154.81 74.980692) (width 0.25) (layer F.Cu) (net 20))
+  (segment (start 153.05 73.35) (end 153.05 77.445376) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 154.14 70.119182) (end 154.14 72.26) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 154.14 72.26) (end 153.05 73.35) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 153.2 69.179182) (end 154.14 70.119182) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 155.1 48.911228) (end 155.1 62) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 153.2 63.9) (end 153.2 69.179182) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 153.05 77.445376) (end 154.78112 79.176496) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 155.1 62) (end 153.2 63.9) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 153.273242 47.08447) (end 155.1 48.911228) (width 0.25) (layer F.Cu) (net 21))
+  (segment (start 153.273242 45.95817) (end 153.273242 47.08447) (width 0.25) (layer F.Cu) (net 21))
   (segment (start 135.493242 45.95817) (end 135.493242 43.219727) (width 0.25) (layer F.Cu) (net 22))
   (segment (start 135.493242 43.219727) (end 135.136051 42.862536) (width 0.25) (layer F.Cu) (net 22))
   (segment (start 140.573242 45.95817) (end 139.371412 47.16) (width 0.25) (layer B.Cu) (net 23))
