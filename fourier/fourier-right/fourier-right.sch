@@ -979,7 +979,7 @@ $EndComp
 Wire Wire Line
 	7700 5500 7700 5800
 Wire Wire Line
-	4500 6400 6900 6400
+	4500 6400 5300 6400
 Connection ~ 9300 5800
 Connection ~ 8700 5800
 Connection ~ 8500 5800
@@ -1152,4 +1152,49 @@ F 3 "" H 1550 3300 60  0001 C CNN
 	1    1400 3300
 	1    0    0    -1  
 $EndComp
+$Comp
+L fourier-right-rescue:SW_PUSH-RESCUE-fourier-right SW_Dc1
+U 1 1 5B35297B
+P 4200 6100
+F 0 "SW_Dc1" H 4350 6210 50  0000 C CNN
+F 1 "SW_PUSH" H 4200 6020 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 4200 6100 50  0001 C CNN
+F 3 "" H 4200 6100 50  0000 C CNN
+	1    4200 6100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4500 6100
+Wire Wire Line
+	3900 6100 3900 5800
+Connection ~ 3900 5800
+$Comp
+L fourier-right-rescue:SW_PUSH-RESCUE-fourier-right SW_D2
+U 1 1 5B354A43
+P 5000 5500
+F 0 "SW_D2" H 5150 5610 50  0000 C CNN
+F 1 "SW_PUSH" H 5000 5420 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 5000 5500 50  0001 C CNN
+F 3 "" H 5000 5500 50  0000 C CNN
+	1    5000 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D D_D2
+U 1 1 5B354BFF
+P 5300 6250
+F 0 "D_D2" H 5300 6350 50  0000 C CNN
+F 1 "D" H 5300 6150 50  0000 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 5300 6250 50  0001 C CNN
+F 3 "" H 5300 6250 50  0001 C CNN
+	1    5300 6250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5300 6400
+Wire Wire Line
+	5300 6400 6900 6400
+Wire Wire Line
+	5300 6100 5300 5500
+Wire Wire Line
+	4700 5500 4700 3700
+Connection ~ 4700 3700
 $EndSCHEMATC

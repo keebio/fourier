@@ -901,7 +901,7 @@ Text GLabel 8500 3700 2    60   Input ~ 0
 rowB
 Text GLabel 8500 4300 2    60   Input ~ 0
 rowC
-Text GLabel 7700 5750 2    60   Input ~ 0
+Text GLabel 8500 5750 2    60   Input ~ 0
 rowD
 Wire Wire Line
 	1350 1600 1950 1600
@@ -964,7 +964,7 @@ Wire Wire Line
 Wire Wire Line
 	7900 3400 7900 4000
 Wire Wire Line
-	7700 4900 7700 5450
+	7700 4900 7700 5200
 Wire Wire Line
 	4700 3400 4700 4000
 Wire Wire Line
@@ -1099,4 +1099,51 @@ Wire Wire Line
 Connection ~ 6100 5450
 Wire Wire Line
 	5300 5750 6100 5750
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_Dc5
+U 1 1 5B34A732
+P 7400 5200
+F 0 "SW_Dc5" H 7550 5310 50  0000 C CNN
+F 1 "SW_PUSH" H 7400 5120 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1.25U-NoLED" H 7400 5200 50  0001 C CNN
+F 3 "" H 7400 5200 50  0000 C CNN
+	1    7400 5200
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 5200
+Wire Wire Line
+	7700 5200 7700 5450
+Wire Wire Line
+	7100 5200 7100 4900
+Connection ~ 7100 4900
+$Comp
+L fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW_D6
+U 1 1 5B34BDAD
+P 8200 4600
+F 0 "SW_D6" H 8350 4710 50  0000 C CNN
+F 1 "SW_PUSH" H 8200 4520 50  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 8200 4600 50  0001 C CNN
+F 3 "" H 8200 4600 50  0000 C CNN
+	1    8200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:D D_D6
+U 1 1 5B34BE54
+P 8500 5600
+F 0 "D_D6" H 8500 5700 50  0000 C CNN
+F 1 "D" H 8500 5500 50  0000 C CNN
+F 2 "Keebio-Parts:Diode-Hybrid-Back" H 8500 5600 50  0001 C CNN
+F 3 "" H 8500 5600 50  0001 C CNN
+	1    8500 5600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 5750 8500 5750
+Connection ~ 7700 5750
+Wire Wire Line
+	8500 5450 8500 4600
+Wire Wire Line
+	7900 4600 7900 4000
+Connection ~ 7900 4000
 $EndSCHEMATC

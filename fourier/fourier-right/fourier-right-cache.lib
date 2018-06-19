@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# device_D
+# device:D
 #
-DEF device_D D 0 40 N N 1 F N
+DEF device:D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "device_D" 0 -100 50 H V C CNN
+F1 "device:D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -24,11 +24,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# fourier-right-rescue_SW_PUSH-RESCUE-fourier-right
+# fourier-right-rescue:SW_PUSH-RESCUE-fourier-right
 #
-DEF fourier-right-rescue_SW_PUSH-RESCUE-fourier-right SW 0 40 N N 1 F N
+DEF fourier-right-rescue:SW_PUSH-RESCUE-fourier-right SW 0 40 N N 1 F N
 F0 "SW" 150 110 50 H V C CNN
-F1 "fourier-right-rescue_SW_PUSH-RESCUE-fourier-right" 0 -80 50 H V C CNN
+F1 "fourier-right-rescue:SW_PUSH-RESCUE-fourier-right" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -39,11 +39,11 @@ X 2 2 300 0 200 L 50 50 0 1 P I
 ENDDRAW
 ENDDEF
 #
-# fourier-right-rescue_TEST_1P-RESCUE-fourier-right
+# fourier-right-rescue:TEST_1P-RESCUE-fourier-right
 #
-DEF fourier-right-rescue_TEST_1P-RESCUE-fourier-right J 0 30 N N 1 F N
+DEF fourier-right-rescue:TEST_1P-RESCUE-fourier-right J 0 30 N N 1 F N
 F0 "J" 0 270 50 H V C CNN
-F1 "fourier-right-rescue_TEST_1P-RESCUE-fourier-right" 0 200 50 H V C CNN
+F1 "fourier-right-rescue:TEST_1P-RESCUE-fourier-right" 0 200 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 DRAW
@@ -52,11 +52,11 @@ X 1 1 0 0 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# keebio_TRRS
+# keebio:TRRS
 #
-DEF keebio_TRRS U 0 40 Y Y 1 F N
+DEF keebio:TRRS U 0 40 Y Y 1 F N
 F0 "U" 0 600 60 H V C CNN
-F1 "keebio_TRRS" 0 -100 60 H V C CNN
+F1 "keebio:TRRS" 0 -100 60 H V C CNN
 F2 "" 150 0 60 H I C CNN
 F3 "" 150 0 60 H I C CNN
 DRAW
@@ -71,11 +71,11 @@ X SLEEVE 4 -350 100 200 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# power_GND
+# power:GND
 #
-DEF power_GND #PWR 0 0 Y Y 1 F P
+DEF power:GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
+F1 "power:GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -84,11 +84,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power_VCC
+# power:VCC
 #
-DEF power_VCC #PWR 0 0 Y Y 1 F P
+DEF power:VCC #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_VCC" 0 150 50 H V C CNN
+F1 "power:VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -98,11 +98,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# promicro_ProMicro
+# promicro:ProMicro
 #
-DEF promicro_ProMicro U 0 40 Y Y 1 F N
+DEF promicro:ProMicro U 0 40 Y Y 1 F N
 F0 "U" 0 0 60 H V C CNN
-F1 "promicro_ProMicro" 0 -750 60 H V C CNN
+F1 "promicro:ProMicro" 0 -750 60 H V C CNN
 F2 "" 1050 -2500 60 V I C CNN
 F3 "" 1050 -2500 60 V I C CNN
 DRAW
