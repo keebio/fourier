@@ -225,7 +225,7 @@ U 1 1 597A37F8
 P 2650 1650
 F 0 "U1" H 2650 1650 60  0000 C CNN
 F 1 "ProMicro" H 2650 900 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" V 3700 -850 60  0001 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro-ZigZag" V 3700 -850 60  0001 C CNN
 F 3 "" V 3700 -850 60  0001 C CNN
 	1    2650 1650
 	1    0    0    -1  
@@ -1075,17 +1075,6 @@ Wire Wire Line
 Wire Wire Line
 	5500 5450 5500 5200
 Connection ~ 5500 5200
-$Comp
-L fourier-left-rescue:TRRS-keebio U2
-U 1 1 5A9E01AE
-P 2450 3300
-F 0 "U2" H 2678 3603 60  0000 L CNN
-F 1 "TRRS" H 2678 3497 60  0000 L CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 2600 3300 60  0001 C CNN
-F 3 "" H 2600 3300 60  0001 C CNN
-	1    2450 3300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 4900 4500 5200
 Connection ~ 4500 5200
@@ -1146,4 +1135,15 @@ Wire Wire Line
 Wire Wire Line
 	7900 4600 7900 4000
 Connection ~ 7900 4000
+$Comp
+L keebio:TRRS U2
+U 1 1 5C4EBF5E
+P 2450 3300
+F 0 "U2" H 2678 3603 60  0000 L CNN
+F 1 "TRRS" H 2678 3497 60  0000 L CNN
+F 2 "Keebio-Parts:TRRS-PJ-320A" H 2600 3300 60  0001 C CNN
+F 3 "" H 2600 3300 60  0001 C CNN
+	1    2450 3300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
