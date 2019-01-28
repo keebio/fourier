@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:fourier-right-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -175,17 +175,6 @@ Text GLabel 850  4150 0    60   Input ~ 0
 C6
 Text GLabel 1950 2200 0    60   Input ~ 0
 LED
-$Comp
-L promicro:ProMicro U1
-U 1 1 597A37F8
-P 2650 1650
-F 0 "U1" H 2650 1650 60  0000 C CNN
-F 1 "ProMicro" H 2650 900 60  0000 C CNN
-F 2 "Keebio-Parts:ArduinoProMicro" V 3700 -850 60  0001 C CNN
-F 3 "" V 3700 -850 60  0001 C CNN
-	1    2650 1650
-	1    0    0    -1  
-$EndComp
 $Comp
 L fourier-right-rescue:TEST_1P-RESCUE-fourier-right J1
 U 1 1 59B06325
@@ -1142,17 +1131,6 @@ Wire Wire Line
 Wire Wire Line
 	9300 3700 9300 3550
 $Comp
-L keebio:TRRS U2
-U 1 1 5A9EF88B
-P 1400 3300
-F 0 "U2" H 1628 3603 60  0000 L CNN
-F 1 "TRRS" H 1628 3497 60  0000 L CNN
-F 2 "Keebio-Parts:TRRS-PJ-320A" H 1550 3300 60  0001 C CNN
-F 3 "" H 1550 3300 60  0001 C CNN
-	1    1400 3300
-	1    0    0    -1  
-$EndComp
-$Comp
 L fourier-right-rescue:SW_PUSH-RESCUE-fourier-right SW_Dc1
 U 1 1 5B35297B
 P 4200 6100
@@ -1197,4 +1175,28 @@ Wire Wire Line
 Wire Wire Line
 	4700 5500 4700 3700
 Connection ~ 4700 3700
+$Comp
+L fourier-right-rescue:ProMicro-promicro U1
+U 1 1 597A37F8
+P 2650 1650
+F 0 "U1" H 2650 1650 60  0000 C CNN
+F 1 "ProMicro" H 2650 900 60  0000 C CNN
+F 2 "Keebio-Parts:ArduinoProMicro-ZigZag" V 3700 -850 60  0001 C CNN
+F 3 "" V 3700 -850 60  0001 C CNN
+	1    2650 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L keebio:TRRS U2
+U 1 1 5C4F55F1
+P 1400 3300
+F 0 "U2" H 1628 3603 60  0000 L CNN
+F 1 "TRRS" H 1628 3497 60  0000 L CNN
+F 2 "Keebio-Parts:TRRS-PJ-320A" H 1550 3300 60  0001 C CNN
+F 3 "" H 1550 3300 60  0001 C CNN
+	1    1400 3300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3350 1100
+NoConn ~ 1950 1700
 $EndSCHEMATC
