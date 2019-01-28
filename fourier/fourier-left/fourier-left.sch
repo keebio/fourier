@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:fourier-left-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -220,7 +220,7 @@ C6
 Text GLabel 1950 2200 0    60   Input ~ 0
 LED
 $Comp
-L promicro:ProMicro U1
+L fourier-left-rescue:ProMicro-promicro U1
 U 1 1 597A37F8
 P 2650 1650
 F 0 "U1" H 2650 1650 60  0000 C CNN
@@ -1076,7 +1076,7 @@ Wire Wire Line
 	5500 5450 5500 5200
 Connection ~ 5500 5200
 $Comp
-L keebio:TRRS U2
+L fourier-left-rescue:TRRS-keebio U2
 U 1 1 5A9E01AE
 P 2450 3300
 F 0 "U2" H 2678 3603 60  0000 L CNN

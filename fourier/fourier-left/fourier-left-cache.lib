@@ -1,16 +1,15 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# device:D
+# device_D
 #
-DEF device:D D 0 40 N N 1 F N
+DEF device_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "device:D" 0 -100 50 H V C CNN
+F1 "device_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
  TO-???*
- *SingleDiode
  *_Diode_*
  *SingleDiode*
  D_*
@@ -24,15 +23,14 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# device:R
+# device_R
 #
-DEF device:R R 0 0 N Y 1 F N
+DEF device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "device:R" 0 0 50 V V C CNN
+F1 "device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- R_*
  R_*
 $ENDFPLIST
 DRAW
@@ -42,85 +40,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# fourier-left-rescue:SW_PUSH-RESCUE-fourier-left
+# fourier-left-rescue_ProMicro-promicro
 #
-DEF fourier-left-rescue:SW_PUSH-RESCUE-fourier-left SW 0 40 N N 1 F N
-F0 "SW" 150 110 50 H V C CNN
-F1 "fourier-left-rescue:SW_PUSH-RESCUE-fourier-left" 0 -80 50 H V C CNN
-F2 "" 0 0 50 H V C CNN
-F3 "" 0 0 50 H V C CNN
-DRAW
-S -170 50 170 60 0 1 0 N
-P 4 0 1 0 -40 60 -30 90 30 90 40 60 N
-X 1 1 -300 0 200 R 50 50 0 1 P I
-X 2 2 300 0 200 L 50 50 0 1 P I
-ENDDRAW
-ENDDEF
-#
-# fourier-left-rescue:TEST_1P-RESCUE-fourier-left
-#
-DEF fourier-left-rescue:TEST_1P-RESCUE-fourier-left J 0 30 N N 1 F N
-F0 "J" 0 270 50 H V C CNN
-F1 "fourier-left-rescue:TEST_1P-RESCUE-fourier-left" 0 200 50 H V C CNN
-F2 "" 200 0 50 H I C CNN
-F3 "" 200 0 50 H I C CNN
-DRAW
-C 0 130 30 0 1 0 N
-X 1 1 0 0 100 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# keebio:TRRS
-#
-DEF keebio:TRRS U 0 40 Y Y 1 F N
-F0 "U" 0 600 60 H V C CNN
-F1 "keebio:TRRS" 0 -100 60 H V C CNN
-F2 "" 150 0 60 H I C CNN
-F3 "" 150 0 60 H I C CNN
-DRAW
-S -150 0 -150 500 0 1 0 N
-S -150 500 200 500 0 1 0 N
-S 200 0 -150 0 0 1 0 N
-S 200 500 200 0 0 1 0 N
-X TIP 1 -350 400 200 R 50 50 1 1 I
-X RING1 2 -350 300 200 R 50 50 1 1 I
-X RING2 3 -350 200 200 R 50 50 1 1 I
-X SLEEVE 4 -350 100 200 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# power:GND
-#
-DEF power:GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power:VCC
-#
-DEF power:VCC #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:VCC" 0 150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
-X VCC 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# promicro:ProMicro
-#
-DEF promicro:ProMicro U 0 40 Y Y 1 F N
+DEF fourier-left-rescue_ProMicro-promicro U 0 40 Y Y 1 F N
 F0 "U" 0 0 60 H V C CNN
-F1 "promicro:ProMicro" 0 -750 60 H V C CNN
+F1 "fourier-left-rescue_ProMicro-promicro" 0 -750 60 H V C CNN
 F2 "" 1050 -2500 60 V I C CNN
 F3 "" 1050 -2500 60 V I C CNN
 DRAW
@@ -149,6 +73,80 @@ X 3/PD0 6 -700 50 200 R 50 50 1 1 I
 X 4/PD4 7 -700 -50 200 R 50 50 1 1 I
 X 5/PC6 8 -700 -150 200 R 50 50 1 1 I
 X 6/PD7 9 -700 -250 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# fourier-left-rescue_SW_PUSH-RESCUE-fourier-left
+#
+DEF fourier-left-rescue_SW_PUSH-RESCUE-fourier-left SW 0 40 N N 1 F N
+F0 "SW" 150 110 50 H V C CNN
+F1 "fourier-left-rescue_SW_PUSH-RESCUE-fourier-left" 0 -80 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+S -170 50 170 60 0 1 0 N
+P 4 0 1 0 -40 60 -30 90 30 90 40 60 N
+X 1 1 -300 0 200 R 50 50 0 1 P I
+X 2 2 300 0 200 L 50 50 0 1 P I
+ENDDRAW
+ENDDEF
+#
+# fourier-left-rescue_TEST_1P-RESCUE-fourier-left
+#
+DEF fourier-left-rescue_TEST_1P-RESCUE-fourier-left J 0 30 N N 1 F N
+F0 "J" 0 270 50 H V C CNN
+F1 "fourier-left-rescue_TEST_1P-RESCUE-fourier-left" 0 200 50 H V C CNN
+F2 "" 200 0 50 H I C CNN
+F3 "" 200 0 50 H I C CNN
+DRAW
+C 0 130 30 0 1 0 N
+X 1 1 0 0 100 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# fourier-left-rescue_TRRS-keebio
+#
+DEF fourier-left-rescue_TRRS-keebio U 0 40 Y Y 1 F N
+F0 "U" 0 600 60 H V C CNN
+F1 "fourier-left-rescue_TRRS-keebio" 0 -100 60 H V C CNN
+F2 "" 150 0 60 H I C CNN
+F3 "" 150 0 60 H I C CNN
+DRAW
+S -150 0 -150 500 0 1 0 N
+S -150 500 200 500 0 1 0 N
+S 200 0 -150 0 0 1 0 N
+S 200 500 200 0 0 1 0 N
+X TIP 1 -350 400 200 R 50 50 1 1 I
+X RING1 2 -350 300 200 R 50 50 1 1 I
+X RING2 3 -350 200 200 R 50 50 1 1 I
+X SLEEVE 4 -350 100 200 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+C 0 75 25 0 1 0 N
+P 2 0 1 0 0 0 0 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
