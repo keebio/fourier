@@ -5,9 +5,9 @@ EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 1
-Title "Tau Keyboard"
+Title "Fourier Keyboard"
 Date ""
-Rev "1"
+Rev "1.2"
 Comp "Keebio"
 Comment1 ""
 Comment2 ""
